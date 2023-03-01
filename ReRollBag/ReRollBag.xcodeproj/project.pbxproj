@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		35A8901D31493560AEDFEBE7 /* Pods_ReRollBag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DF24783C33BA007BF5F5D31 /* Pods_ReRollBag.framework */; };
-		42DF75139192B9C60BF16EAE /* Pods_ReRollBag_ReRollBagUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D31CA0EC9AA97809482D3A /* Pods_ReRollBag_ReRollBagUITests.framework */; };
-		C376D73AF592EBF823C8AA24 /* Pods_ReRollBagTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB4D2CD35DF0267C7AFB5B2 /* Pods_ReRollBagTests.framework */; };
+		63E007B4FEA91AB3A67A2708 /* Pods_ReRollBag_ReRollBagUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8AD59B6A08256456E635C86 /* Pods_ReRollBag_ReRollBagUITests.framework */; };
+		B91EB140409961D0888FB5C4 /* Pods_ReRollBag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0898A48C969120EEB9383D3 /* Pods_ReRollBag.framework */; };
+		F11FB4A0BEF64BA095ADD2AA /* Pods_ReRollBagTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A3F63CD5CE42828E9508C6 /* Pods_ReRollBagTests.framework */; };
+		FA5B0B3C29AF46B40057EB6A /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5B0B3B29AF46B40057EB6A /* Secret.swift */; };
 		FA6479F529AD0D680078EF2F /* ReRollBagApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6479F429AD0D680078EF2F /* ReRollBagApp.swift */; };
 		FA6479F729AD0D680078EF2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6479F629AD0D680078EF2F /* ContentView.swift */; };
 		FA6479F929AD0D690078EF2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6479F829AD0D690078EF2F /* Assets.xcassets */; };
@@ -22,7 +23,6 @@
 		FA647A2929AD101C0078EF2F /* Ex+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA647A2829AD101C0078EF2F /* Ex+Color.swift */; };
 		FA647A2B29AD10310078EF2F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA647A2A29AD10310078EF2F /* User.swift */; };
 		FA647A2D29AD103F0078EF2F /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA647A2C29AD103F0078EF2F /* UserViewModel.swift */; };
-		FA647A3129AD11230078EF2F /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA647A3029AD11230078EF2F /* Secret.swift */; };
 		FA647A3329AD113D0078EF2F /* TextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA647A3229AD113D0078EF2F /* TextFieldModifier.swift */; };
 		FA647A3E29AD12250078EF2F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA647A3D29AD12250078EF2F /* MapView.swift */; };
 		FA647A4029AD12360078EF2F /* GoogleMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA647A3F29AD12360078EF2F /* GoogleMap.swift */; };
@@ -50,14 +50,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		62C3BCCB2CE1F7FA181612BF /* Pods-ReRollBag.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReRollBag.release.xcconfig"; path = "Target Support Files/Pods-ReRollBag/Pods-ReRollBag.release.xcconfig"; sourceTree = "<group>"; };
-		7518C41A62E4B902102D57A1 /* Pods-ReRollBag-ReRollBagUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReRollBag-ReRollBagUITests.release.xcconfig"; path = "Target Support Files/Pods-ReRollBag-ReRollBagUITests/Pods-ReRollBag-ReRollBagUITests.release.xcconfig"; sourceTree = "<group>"; };
-		8C29FD8C90F2175F8691E0F9 /* Pods-ReRollBag-ReRollBagUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReRollBag-ReRollBagUITests.debug.xcconfig"; path = "Target Support Files/Pods-ReRollBag-ReRollBagUITests/Pods-ReRollBag-ReRollBagUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		9DF24783C33BA007BF5F5D31 /* Pods_ReRollBag.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReRollBag.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4D183D35E8DB76240AAB829 /* Pods-ReRollBag.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReRollBag.debug.xcconfig"; path = "Target Support Files/Pods-ReRollBag/Pods-ReRollBag.debug.xcconfig"; sourceTree = "<group>"; };
-		A5D31CA0EC9AA97809482D3A /* Pods_ReRollBag_ReRollBagUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReRollBag_ReRollBagUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BFB4D2CD35DF0267C7AFB5B2 /* Pods_ReRollBagTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReRollBagTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D469C98CD50E90668CA97412 /* Pods-ReRollBagTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReRollBagTests.debug.xcconfig"; path = "Target Support Files/Pods-ReRollBagTests/Pods-ReRollBagTests.debug.xcconfig"; sourceTree = "<group>"; };
+		092AD83BE6757DCB4FF8BF33 /* Pods-ReRollBag.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReRollBag.release.xcconfig"; path = "Target Support Files/Pods-ReRollBag/Pods-ReRollBag.release.xcconfig"; sourceTree = "<group>"; };
+		677BE82EFE2B83A81F3B66C1 /* Pods-ReRollBag-ReRollBagUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReRollBag-ReRollBagUITests.debug.xcconfig"; path = "Target Support Files/Pods-ReRollBag-ReRollBagUITests/Pods-ReRollBag-ReRollBagUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		760BD790B650B967B82298F0 /* Pods-ReRollBag-ReRollBagUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReRollBag-ReRollBagUITests.release.xcconfig"; path = "Target Support Files/Pods-ReRollBag-ReRollBagUITests/Pods-ReRollBag-ReRollBagUITests.release.xcconfig"; sourceTree = "<group>"; };
+		78DEED4A746A235926360229 /* Pods-ReRollBag.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReRollBag.debug.xcconfig"; path = "Target Support Files/Pods-ReRollBag/Pods-ReRollBag.debug.xcconfig"; sourceTree = "<group>"; };
+		98A3F63CD5CE42828E9508C6 /* Pods_ReRollBagTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReRollBagTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A3691DC2A433B6F76B747BE /* Pods-ReRollBagTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReRollBagTests.debug.xcconfig"; path = "Target Support Files/Pods-ReRollBagTests/Pods-ReRollBagTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A8AD59B6A08256456E635C86 /* Pods_ReRollBag_ReRollBagUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReRollBag_ReRollBagUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D76FD7DC63D30EF4008EE781 /* Pods-ReRollBagTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReRollBagTests.release.xcconfig"; path = "Target Support Files/Pods-ReRollBagTests/Pods-ReRollBagTests.release.xcconfig"; sourceTree = "<group>"; };
+		E0898A48C969120EEB9383D3 /* Pods_ReRollBag.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReRollBag.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA5B0B3B29AF46B40057EB6A /* Secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
 		FA6479F129AD0D680078EF2F /* ReRollBag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReRollBag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA6479F429AD0D680078EF2F /* ReRollBagApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReRollBagApp.swift; sourceTree = "<group>"; };
 		FA6479F629AD0D680078EF2F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,7 +75,6 @@
 		FA647A2829AD101C0078EF2F /* Ex+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ex+Color.swift"; sourceTree = "<group>"; };
 		FA647A2A29AD10310078EF2F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FA647A2C29AD103F0078EF2F /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
-		FA647A3029AD11230078EF2F /* Secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
 		FA647A3229AD113D0078EF2F /* TextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifier.swift; sourceTree = "<group>"; };
 		FA647A3D29AD12250078EF2F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		FA647A3F29AD12360078EF2F /* GoogleMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMap.swift; sourceTree = "<group>"; };
@@ -82,7 +83,6 @@
 		FA647A4529AD12710078EF2F /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		FA647A4829AD13FC0078EF2F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FA647A4A29AD29AB0078EF2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		FFC16A72E1ED75F5A933F83F /* Pods-ReRollBagTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReRollBagTests.release.xcconfig"; path = "Target Support Files/Pods-ReRollBagTests/Pods-ReRollBagTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35A8901D31493560AEDFEBE7 /* Pods_ReRollBag.framework in Frameworks */,
+				B91EB140409961D0888FB5C4 /* Pods_ReRollBag.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C376D73AF592EBF823C8AA24 /* Pods_ReRollBagTests.framework in Frameworks */,
+				F11FB4A0BEF64BA095ADD2AA /* Pods_ReRollBagTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,19 +106,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42DF75139192B9C60BF16EAE /* Pods_ReRollBag_ReRollBagUITests.framework in Frameworks */,
+				63E007B4FEA91AB3A67A2708 /* Pods_ReRollBag_ReRollBagUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		57D48C3403E82BA0524B59C6 /* Frameworks */ = {
+		6B6CB27A1A3D0731726309CA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9DF24783C33BA007BF5F5D31 /* Pods_ReRollBag.framework */,
-				A5D31CA0EC9AA97809482D3A /* Pods_ReRollBag_ReRollBagUITests.framework */,
-				BFB4D2CD35DF0267C7AFB5B2 /* Pods_ReRollBagTests.framework */,
+				E0898A48C969120EEB9383D3 /* Pods_ReRollBag.framework */,
+				A8AD59B6A08256456E635C86 /* Pods_ReRollBag_ReRollBagUITests.framework */,
+				98A3F63CD5CE42828E9508C6 /* Pods_ReRollBagTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -126,14 +126,22 @@
 		9923528594BA766F2E4CDCE2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A4D183D35E8DB76240AAB829 /* Pods-ReRollBag.debug.xcconfig */,
-				62C3BCCB2CE1F7FA181612BF /* Pods-ReRollBag.release.xcconfig */,
-				8C29FD8C90F2175F8691E0F9 /* Pods-ReRollBag-ReRollBagUITests.debug.xcconfig */,
-				7518C41A62E4B902102D57A1 /* Pods-ReRollBag-ReRollBagUITests.release.xcconfig */,
-				D469C98CD50E90668CA97412 /* Pods-ReRollBagTests.debug.xcconfig */,
-				FFC16A72E1ED75F5A933F83F /* Pods-ReRollBagTests.release.xcconfig */,
+				78DEED4A746A235926360229 /* Pods-ReRollBag.debug.xcconfig */,
+				092AD83BE6757DCB4FF8BF33 /* Pods-ReRollBag.release.xcconfig */,
+				677BE82EFE2B83A81F3B66C1 /* Pods-ReRollBag-ReRollBagUITests.debug.xcconfig */,
+				760BD790B650B967B82298F0 /* Pods-ReRollBag-ReRollBagUITests.release.xcconfig */,
+				9A3691DC2A433B6F76B747BE /* Pods-ReRollBagTests.debug.xcconfig */,
+				D76FD7DC63D30EF4008EE781 /* Pods-ReRollBagTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		FA5B0B3A29AF46A80057EB6A /* Secret */ = {
+			isa = PBXGroup;
+			children = (
+				FA5B0B3B29AF46B40057EB6A /* Secret.swift */,
+			);
+			path = Secret;
 			sourceTree = "<group>";
 		};
 		FA6479E829AD0D680078EF2F = {
@@ -144,7 +152,7 @@
 				FA647A1329AD0D6A0078EF2F /* ReRollBagUITests */,
 				FA6479F229AD0D680078EF2F /* Products */,
 				9923528594BA766F2E4CDCE2 /* Pods */,
-				57D48C3403E82BA0524B59C6 /* Frameworks */,
+				6B6CB27A1A3D0731726309CA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -230,8 +238,8 @@
 		FA647A2629AD0FF30078EF2F /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
+				FA5B0B3A29AF46A80057EB6A /* Secret */,
 				FA647A4729AD13E40078EF2F /* Constants */,
-				FA647A2F29AD110C0078EF2F /* Secret */,
 				FA647A2E29AD10B50078EF2F /* Modifiers */,
 				FA647A2729AD10070078EF2F /* Extentions */,
 			);
@@ -252,14 +260,6 @@
 				FA647A3229AD113D0078EF2F /* TextFieldModifier.swift */,
 			);
 			path = Modifiers;
-			sourceTree = "<group>";
-		};
-		FA647A2F29AD110C0078EF2F /* Secret */ = {
-			isa = PBXGroup;
-			children = (
-				FA647A3029AD11230078EF2F /* Secret.swift */,
-			);
-			path = Secret;
 			sourceTree = "<group>";
 		};
 		FA647A3429AD117F0078EF2F /* Auth */ = {
@@ -303,11 +303,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA647A1A29AD0D6A0078EF2F /* Build configuration list for PBXNativeTarget "ReRollBag" */;
 			buildPhases = (
-				A55011EDFA427E29CEA29B6D /* [CP] Check Pods Manifest.lock */,
+				FC7C35DE535751028B4D07A9 /* [CP] Check Pods Manifest.lock */,
 				FA6479ED29AD0D680078EF2F /* Sources */,
 				FA6479EE29AD0D680078EF2F /* Frameworks */,
 				FA6479EF29AD0D680078EF2F /* Resources */,
-				CD9B83341565CA762AF1FD34 /* [CP] Copy Pods Resources */,
+				7B06EEF58D0D876029B33868 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -322,7 +322,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA647A1D29AD0D6A0078EF2F /* Build configuration list for PBXNativeTarget "ReRollBagTests" */;
 			buildPhases = (
-				A2AB20C71319845CBE0E0BEB /* [CP] Check Pods Manifest.lock */,
+				3733C058C22FFE3BB30C19CF /* [CP] Check Pods Manifest.lock */,
 				FA647A0229AD0D6A0078EF2F /* Sources */,
 				FA647A0329AD0D6A0078EF2F /* Frameworks */,
 				FA647A0429AD0D6A0078EF2F /* Resources */,
@@ -341,11 +341,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA647A2029AD0D6A0078EF2F /* Build configuration list for PBXNativeTarget "ReRollBagUITests" */;
 			buildPhases = (
-				C75FA812798F19FC93523186 /* [CP] Check Pods Manifest.lock */,
+				EBF29285D5B9A58DCADE9997 /* [CP] Check Pods Manifest.lock */,
 				FA647A0C29AD0D6A0078EF2F /* Sources */,
 				FA647A0D29AD0D6A0078EF2F /* Frameworks */,
 				FA647A0E29AD0D6A0078EF2F /* Resources */,
-				FF49D6108845F6E205F6C8A8 /* [CP] Copy Pods Resources */,
+				8F01111BA54215C370500383 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -427,7 +427,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A2AB20C71319845CBE0E0BEB /* [CP] Check Pods Manifest.lock */ = {
+		3733C058C22FFE3BB30C19CF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -449,29 +449,41 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A55011EDFA427E29CEA29B6D /* [CP] Check Pods Manifest.lock */ = {
+		7B06EEF58D0D876029B33868 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReRollBag/Pods-ReRollBag-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ReRollBag-checkManifestLockResult.txt",
+				"${PODS_ROOT}/Target Support Files/Pods-ReRollBag/Pods-ReRollBag-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReRollBag/Pods-ReRollBag-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C75FA812798F19FC93523186 /* [CP] Check Pods Manifest.lock */ = {
+		8F01111BA54215C370500383 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReRollBag-ReRollBagUITests/Pods-ReRollBag-ReRollBagUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReRollBag-ReRollBagUITests/Pods-ReRollBag-ReRollBagUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReRollBag-ReRollBagUITests/Pods-ReRollBag-ReRollBagUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBF29285D5B9A58DCADE9997 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -493,38 +505,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CD9B83341565CA762AF1FD34 /* [CP] Copy Pods Resources */ = {
+		FC7C35DE535751028B4D07A9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReRollBag/Pods-ReRollBag-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReRollBag/Pods-ReRollBag-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReRollBag-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReRollBag/Pods-ReRollBag-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FF49D6108845F6E205F6C8A8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReRollBag-ReRollBagUITests/Pods-ReRollBag-ReRollBagUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReRollBag-ReRollBagUITests/Pods-ReRollBag-ReRollBagUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReRollBag-ReRollBagUITests/Pods-ReRollBag-ReRollBagUITests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -535,6 +535,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA647A0129AD0D690078EF2F /* ReRollBag.xcdatamodeld in Sources */,
+				FA5B0B3C29AF46B40057EB6A /* Secret.swift in Sources */,
 				FA647A4429AD124E0078EF2F /* ProfileView.swift in Sources */,
 				FA6479FE29AD0D690078EF2F /* Persistence.swift in Sources */,
 				FA647A2B29AD10310078EF2F /* User.swift in Sources */,
@@ -543,7 +544,6 @@
 				FA6479F729AD0D680078EF2F /* ContentView.swift in Sources */,
 				FA647A4029AD12360078EF2F /* GoogleMap.swift in Sources */,
 				FA647A4229AD12430078EF2F /* SignInView.swift in Sources */,
-				FA647A3129AD11230078EF2F /* Secret.swift in Sources */,
 				FA647A3329AD113D0078EF2F /* TextFieldModifier.swift in Sources */,
 				FA647A4629AD12710078EF2F /* SignUpView.swift in Sources */,
 				FA647A3E29AD12250078EF2F /* MapView.swift in Sources */,
@@ -704,7 +704,7 @@
 		};
 		FA647A1B29AD0D6A0078EF2F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4D183D35E8DB76240AAB829 /* Pods-ReRollBag.debug.xcconfig */;
+			baseConfigurationReference = 78DEED4A746A235926360229 /* Pods-ReRollBag.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -720,6 +720,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -735,7 +736,7 @@
 		};
 		FA647A1C29AD0D6A0078EF2F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62C3BCCB2CE1F7FA181612BF /* Pods-ReRollBag.release.xcconfig */;
+			baseConfigurationReference = 092AD83BE6757DCB4FF8BF33 /* Pods-ReRollBag.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -751,6 +752,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -766,7 +768,7 @@
 		};
 		FA647A1E29AD0D6A0078EF2F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D469C98CD50E90668CA97412 /* Pods-ReRollBagTests.debug.xcconfig */;
+			baseConfigurationReference = 9A3691DC2A433B6F76B747BE /* Pods-ReRollBagTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -786,7 +788,7 @@
 		};
 		FA647A1F29AD0D6A0078EF2F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FFC16A72E1ED75F5A933F83F /* Pods-ReRollBagTests.release.xcconfig */;
+			baseConfigurationReference = D76FD7DC63D30EF4008EE781 /* Pods-ReRollBagTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -806,7 +808,7 @@
 		};
 		FA647A2129AD0D6A0078EF2F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C29FD8C90F2175F8691E0F9 /* Pods-ReRollBag-ReRollBagUITests.debug.xcconfig */;
+			baseConfigurationReference = 677BE82EFE2B83A81F3B66C1 /* Pods-ReRollBag-ReRollBagUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -824,7 +826,7 @@
 		};
 		FA647A2229AD0D6A0078EF2F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7518C41A62E4B902102D57A1 /* Pods-ReRollBag-ReRollBagUITests.release.xcconfig */;
+			baseConfigurationReference = 760BD790B650B967B82298F0 /* Pods-ReRollBag-ReRollBagUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
