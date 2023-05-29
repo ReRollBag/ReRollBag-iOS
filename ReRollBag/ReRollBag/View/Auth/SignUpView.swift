@@ -8,21 +8,18 @@
 import SwiftUI
 
 struct SignUpView: View {
-    @State private var email = ""
-    @State private var pw = ""
-    @State private var checkPw = ""
-    @State private var name = ""
-    @State private var phoneNumber = ""
-    @State private var certificationNumber = ""
+    @StateObject var signUpVM = SignUpViewModel()
+    @Binding var authState : AuthState
     
-    @State private var isDuplicated = false
+    @State private var isDuplicatedBtnTapped = false
+    @State private var isDuplicated = true
     @State private var isShowingPw = false
     @State private var isShowingCheckPw = false
     
     //연산프로퍼티
     
     private var isNotIncludedEnglish:  Bool {
-        for c in pw {
+        for c in signUpVM.pw {
             if c.isLetter {
                 return true
             }
@@ -30,7 +27,7 @@ struct SignUpView: View {
         return false
     }
     private var isNotIncludedNumber:  Bool {
-        for c in pw {
+        for c in signUpVM.pw {
             if c.isNumber {
                 return true
             }
@@ -38,7 +35,7 @@ struct SignUpView: View {
         return false
     }
     private var isNotLimitedLength:  Bool {
-        if pw.count < 8 || pw.count > 20 {
+        if signUpVM.pw.count < 8 || signUpVM.pw.count > 20 {
             return false
         }
         return true
@@ -48,7 +45,7 @@ struct SignUpView: View {
         if !isNotIncludedEnglish || !isNotIncludedNumber || !isNotLimitedLength {
             return false
         }else {
-            if pw == checkPw {
+            if signUpVM.pw == signUpVM.checkPw {
                 return true
             }else{
                 return false
@@ -67,7 +64,7 @@ struct SignUpView: View {
                     .padding(.top,10)
                 HStack{
                     VStack{
-                        TextField("이메일", text: $email)
+                        TextField("이메일", text: $signUpVM.email)
                             .textFieldStyle(.plain)
                             .frame(maxWidth: .infinity)
                             .padding(.top,10)
@@ -75,18 +72,23 @@ struct SignUpView: View {
                         Divider()
                     }
                     Button(action: {
-                        isDuplicated.toggle()
+                        signUpVM.checkEmailDuplicated()
+                        print("중복확인 버튼 클릭 \(signUpVM.isDuplicated)")
                     }) {
                         Text("중복확인")
-                            .foregroundColor(Color(isDuplicated ? "Green1": "Gray2"))
+                            .foregroundColor(Color(isDuplicated ? "Gray2": "Green1"))
                             .overlay {
                                 RoundedRectangle(cornerRadius: 25)
-                                    .stroke(Color(isDuplicated ? "Green1": "Gray2"), lineWidth: 1).frame(width:90,height: 35)
+                                    .stroke(Color(isDuplicated ? "Gray2": "Green1"), lineWidth: 1).frame(width:90,height: 35)
                                 
                             }
                     }.frame(width:100)
                     
                 }//HStack
+                Text(isDuplicated ? "" : "중복된 이메일입니다")
+                    .foregroundColor(.red)
+                    .frame(height: 10)
+                    .font(.caption)
             }
             
             // MARK: - 비밀번호 입력 뷰
@@ -95,7 +97,7 @@ struct SignUpView: View {
                     .font(.footnote)
                     .padding(.top,10)
                 
-                TextField("비밀번호", text: $pw)
+                TextField("비밀번호", text: $signUpVM.pw)
                     .textFieldStyle(.plain)
                     .frame(maxWidth: .infinity)
                     .padding(.top,10)
@@ -139,7 +141,7 @@ struct SignUpView: View {
                     .font(.footnote)
                     .padding(.top,10)
                 
-                TextField("비밀번호 확인", text: $checkPw)
+                TextField("비밀번호 확인", text: $signUpVM.checkPw)
                     .textFieldStyle(.plain)
                     .frame(maxWidth: .infinity)
                     .padding(.top,10)
@@ -173,92 +175,34 @@ struct SignUpView: View {
                     .font(.footnote)
                     .padding(.top,10)
                 
-                TextField("이름", text: $name)
+                TextField("이름", text: $signUpVM.name)
                     .textFieldStyle(.plain)
                     .frame(maxWidth: .infinity)
                     .padding(.top,10)
                 
                 Divider()
             }
-            // MARK: - 휴대폰 번호 입력 뷰
             
-            Group{
-                Text("휴대폰 번호")
-                    .font(.footnote)
-                    .padding(.top,10)
-                HStack{
-                    VStack{
-                        TextField("휴대폰 번호", text: $phoneNumber)
-                            .textFieldStyle(.plain)
-                            .frame(maxWidth: .infinity)
-                            .padding(.top,10)
-                        
-                        Divider()
-                    }
-                    Button(action: {
-                        isDuplicated.toggle()
-                    }) {
-                        Text("인증 요청")
-                            .foregroundColor(Color(isDuplicated ? "Green1": "Gray2"))
-                            .padding()
-                            .overlay {
-                                RoundedRectangle(cornerRadius: 25)
-                                    .stroke(Color(isDuplicated ? "Green1": "Gray2"), lineWidth: 1).frame(width:90 ,height: 35)
-                                
-                            }
-                    }.frame(width:100)
-                    
-                }//HStack
-            }
-            // MARK: - 인증번호 입력 뷰
-            
-            Group{
-                Text("인증번호 확인")
-                    .font(.footnote)
-                    .padding(.top,10)
-                HStack{
-                    VStack{
-                        TextField("인증번호", text: $certificationNumber)
-                            .textFieldStyle(.plain)
-                            .frame(maxWidth: .infinity)
-                            .padding(.top,10)
-                        
-                        Divider()
-                    }
-                    Button(action: {
-                        isDuplicated.toggle()
-                    }) {
-                        Text("확인")
-                            .foregroundColor(Color(isDuplicated ? "Green1": "Gray2"))
-                            .padding()
-                            .overlay {
-                                RoundedRectangle(cornerRadius: 25)
-                                    .stroke(Color(isDuplicated ? "Green1": "Gray2"), lineWidth: 1).frame(width:90,height: 35)
-                                
-                            }
-                    }.frame(width:100)
-                    
-                }//HStack
-                .padding(.bottom,30)
+            NavigationLink(destination: EmptyView()) {
+                RoundedRectangle(cornerRadius: 25)
+                    .fill(Color("Green1"))
+                    .frame(height: 55)
                 
-                NavigationLink(destination: EmptyView()) {
-                    RoundedRectangle(cornerRadius: 25)
-                        .fill(Color("Green1"))
-                        .frame(height: 55)
-
-                        .overlay {
-                            Text("회원가입")
-                                .font(.title3)
-                                .foregroundColor(.white)
-                        }
-                }
+                    .overlay {
+                        Text("회원가입")
+                            .font(.title3)
+                            .foregroundColor(.white)
+                    }
             }
+            .padding(.top,30)
+            Spacer()
         }
         .padding(30)
+        
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
                 Button(action: {
-                    
+                    authState = .signIn(true)
                 }) {
                     Image(systemName: "chevron.left")
                         .foregroundColor(Color("Green1"))
@@ -270,7 +214,7 @@ struct SignUpView: View {
                     .foregroundColor(Color("Green1"))
                     .font(.headline)
             }
-        }
+       }
     }
     
     /// by 조건에 따라 색깔이 바뀌는 Custom Divider
@@ -285,9 +229,11 @@ struct SignUpView: View {
 
 
 struct SignUpView_Previews: PreviewProvider {
+    @State static var authState : AuthState = .signUp
+    
     static var previews: some View {
         NavigationView{
-            SignUpView()
+            SignUpView(authState: $authState)
         }
     }
 }

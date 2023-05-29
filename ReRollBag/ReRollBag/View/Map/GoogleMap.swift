@@ -38,4 +38,12 @@ final class Coordinator: NSObject, ObservableObject {
     static let shared = Coordinator()
     
 }
+
+//final class MapViewCoordinator: NSObject, GMSMapViewDelegate {
+//    var mapViewControllerBridge: MapViewControllerBridge
+//
+//    init(_ mapViewControllerBridge: MapViewControllerBridge) {
+//      self.mapViewControllerBridge = mapViewControllerBridge
+//    }
+//  }
  

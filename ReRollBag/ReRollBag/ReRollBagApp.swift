@@ -26,12 +26,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 struct ReRollBagApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    let persistenceController = PersistenceController.shared
 
     var body: some Scene {
         WindowGroup {
             NavigationView{
-                SignInView()
+                AuthView()
             }
         }
     }
