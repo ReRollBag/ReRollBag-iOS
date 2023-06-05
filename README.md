@@ -53,6 +53,13 @@ The "ReRollBag" project is an application aimed at promoting sustainable consump
 - The design work is currently being done through Figma.
 - [Figma Link](https://www.figma.com/file/wQyYTV6415CC2EetVwbDKi/Untitled?node-id=0-1)
 
-
 ## Credits
+
+---
+
 The ReRollBag project was developed by a team consisting of a backend developer, Donghwan Lee (Github ID: hwanld) , an Android developer, Heehoon Jeon (Github ID: citytexi), and a designer, Hyeonji Kim, and was created for the 2023 Google Solution Challenge. DuYeong Heo (Github ID: Heodoo) additionally participated as an iOS developer in the challenge team.
+
+## LICENSE
+
+---
+ReRollBag is available under the MIT license. See the [LICENSE](https://github.com/ReRollBag/ReRollBag-iOS/blob/main/LICENSE) file for more info.
