@@ -22,7 +22,6 @@ The "ReRollBag" project is an application aimed at promoting sustainable consump
 - Renting of reusable bags through QR codes attached to the bags
 - Returning the rented bags to designated locations using QR codes before the one-week rental period ends
 - Promoting the use of reusable bags by allowing users to borrow and return bags without a deposit for rental.
-- Users can apply for administrator status through the administrator application menu, receive an authentication number, and enter the number and management area to register as an administrator.
 
 ## Technologies Used
 
