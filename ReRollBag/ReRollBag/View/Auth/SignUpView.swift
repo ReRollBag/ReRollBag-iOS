@@ -9,6 +9,8 @@ import SwiftUI
 
 struct SignUpView: View {
     @StateObject var signUpVM = SignUpViewModel()
+    @StateObject var userVM = UserViewModel()
+    
     @Binding var authState : AuthState
     
     @State private var isDuplicatedBtnTapped = false
@@ -73,6 +75,7 @@ struct SignUpView: View {
                     }
                     Button(action: {
                         signUpVM.checkEmailDuplicated()
+                        isDuplicatedBtnTapped = true
                         print("중복확인 버튼 클릭 \(signUpVM.isDuplicated)")
                     }) {
                         Text("중복확인")
@@ -85,7 +88,7 @@ struct SignUpView: View {
                     }.frame(width:100)
                     
                 }//HStack
-                Text(isDuplicated ? "" : "중복된 이메일입니다")
+                Text(isDuplicatedBtnTapped && !signUpVM.isDuplicated ? "중복된 이메일입니다" : "")
                     .foregroundColor(.red)
                     .frame(height: 10)
                     .font(.caption)
@@ -183,11 +186,13 @@ struct SignUpView: View {
                 Divider()
             }
             
-            NavigationLink(destination: EmptyView()) {
+            Button(action: { signUpVM.signUpWithEmailPassword({
+                authState = .signIn(true)
+                })
+            }) {
                 RoundedRectangle(cornerRadius: 25)
                     .fill(Color("Green1"))
                     .frame(height: 55)
-                
                     .overlay {
                         Text("회원가입")
                             .font(.title3)
@@ -224,6 +229,9 @@ struct SignUpView: View {
             .foregroundColor(Color(by ? "Green1" : "Gray1"))
     }
     
+    func authStateToggle() async -> AuthState {
+        return .signIn(true)
+    }
 }
 
 
