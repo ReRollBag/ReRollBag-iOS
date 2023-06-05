@@ -7,6 +7,7 @@
 
 import SwiftUI
 import GoogleMaps
+import FirebaseCore
 
 class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
@@ -15,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // Override point for customization after application launch.
     GMSServices.provideAPIKey(GOOGLE_API_KEY)
-
+    FirebaseApp.configure()
     return true
   }
 
@@ -25,12 +26,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 struct ReRollBagApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    let persistenceController = PersistenceController.shared
 
     var body: some Scene {
         WindowGroup {
             NavigationView{
-                SignInView()
-            }        }
+                AuthView()
+            }
+        }
     }
 }
