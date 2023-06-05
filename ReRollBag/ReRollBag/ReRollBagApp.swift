@@ -7,7 +7,7 @@
 
 import SwiftUI
 import GoogleMaps
-//import FirebaseCore
+import FirebaseCore
 
 class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // Override point for customization after application launch.
     GMSServices.provideAPIKey(GOOGLE_API_KEY)
-    //FirebaseApp.configure()
+    FirebaseApp.configure()
     return true
   }
 
